@@ -1,6 +1,6 @@
 import pyrogram
 from pyrogram import Client
-from pyrogram.enums import ChatMemberStatus, ParseMode, ButtonStyle
+from pyrogram.enums import ChatMemberStatus, ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
@@ -35,7 +35,7 @@ class Nand(Client):
                     styled_button(
                         text="Add Me To Your Group",
                         url=f"https://t.me/{self.username}?startgroup=true",
-                        style=ButtonStyle.SUCCESS,
+                        style="success",
                     )
                 ]
             ]
