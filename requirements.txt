@@ -1,5 +1,4 @@
-pyrogram 
-pyrofork
+git+https://github.com/KurimuzonAkuma/Kurigram.git
 gTTS
 aiofiles
 aiohttp
@@ -19,8 +18,8 @@ pillow==9.5.0
 psutil
 py-tgcalls==0.9.7
 pykeyboard
-kurigram==2.1.35
 python-dotenv
+python-telegram-bot==22.7
 pyyaml
 requests
 speedtest-cli
@@ -32,9 +31,3 @@ youtube-search
 youtube-search-python
 py-yt-search
 yt-dlp
-# ===========================================
-# ©️ 2025 Nand Yaduwanshi , aka @NoxxOP
-# 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
-# 📢 Telegram Channel : https://t.me/ShrutiBots
-# ===========================================
-
