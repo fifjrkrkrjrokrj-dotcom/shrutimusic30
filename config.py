@@ -1,12 +1,22 @@
 import os
 import re
-from dotenv import load_dotenv
-from pyrogram import filters
-
 import random
+from dotenv import load_dotenv
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardButton
 import builtins
+
+# Ensure ButtonStyle exists in pyrogram.enums (fallback for older Kurigram/Pyrogram builds)
+try:
+    _ = enums.ButtonStyle.PRIMARY
+except AttributeError:
+    from enum import Enum
+    class _ButtonStyleProxy(Enum):
+        DEFAULT = 0
+        PRIMARY = 1
+        DANGER = 2
+        SUCCESS = 3
+    enums.ButtonStyle = _ButtonStyleProxy
 
 _STYLE_MAP = {
     "primary": enums.ButtonStyle.PRIMARY,
