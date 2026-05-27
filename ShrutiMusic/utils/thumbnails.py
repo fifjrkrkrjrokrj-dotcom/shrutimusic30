@@ -37,7 +37,7 @@ CANVAS_H = 2160
 FONT_BOLD = "ShrutiMusic/assets/font3.ttf"
 FONT_REGULAR = "ShrutiMusic/assets/font2.ttf"
 
-BOT_NAME = "NAADINI MUSIC"
+BOT_NAME = "KATIL MUSIC"
 
 # =====================================
 # THUMB GENERATOR
